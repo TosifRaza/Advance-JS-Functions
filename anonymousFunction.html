@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>anonymousFunction</title>
+</head>
+<body>
+   <div>
+        <input id="n1" type="number" placeholder="enter the number1">
+    </div>
+    <div>
+        <input id="n2" type="number" placeholder="enter the number2">
+    </div>
+
+    <button onclick="sumfun()">Submit</button>
+    <p id="display"></p>
+
+
+</body>
+<script>
+    // // Average of three number 
+    // let averageNumber = function(num1,num2,num3){
+    //     return ((num1+num2+num3)/3);
+    // }
+    // console.log(averageNumber(3,3,5));
+
+    // Problem:-I have three number and i have to fine the sum of three number but I have a Function which can Find the sum of two numbers So, how i can find sum off three numbers using this function.
+    // CODE:-
+    
+    function sumfun(){
+        let Firstinput=document.querySelector('#n1');
+        let input1=parseInt( Firstinput.value);
+        
+        let Secondinput=document.querySelector('#n2');
+        let input2=parseInt( Secondinput.value);
+       
+        // console.log()
+
+        let result1=sumoftwonumbers( input1,input2);
+        // console.log(sumoftwonumbers(result1,5))
+        document.querySelector('#display').innerText=sumoftwonumbers(result1,5);
+    }
+    let sumoftwonumbers=function(i,n){
+        return (i+n);
+        
+    }
+     
+   
+</script>
+</html>
