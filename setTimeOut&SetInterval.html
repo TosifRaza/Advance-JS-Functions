@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SetTimeOut & SetIterval</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // let timerId=setTimeout(()=> console.log("My name is Tosif") ,3000);
+    // //For stop set time out before his time we have to use cleartimeout
+    // clearTimeout(timerId)
+    let TimeId=setInterval(()=>console.log(`Hello World now the time is ${new Date}`),1000)
+    // clearInterval(TimeId)
+    setTimeout(()=>clearInterval(TimeId),6000)
+</script>
+</html>
