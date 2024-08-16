@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test Event Listener</title>
+</head>
+<body>
+    <button id="firstB">click me</button>
+    
+</body>
+<script>
+    //Multiple value pashed through a single button using evenListener
+
+    let buttonElement=document.querySelector("#firstB");
+    let buttonElementvalue=()=>{
+        console.log("Hello Everyone");
+    }
+    buttonElement.addEventListener('click',buttonElementvalue);
+    
+    buttonElement.addEventListener('click',event => console.log(` My Click Time Is ${new Date}`));
+
+</script>
+</html>
