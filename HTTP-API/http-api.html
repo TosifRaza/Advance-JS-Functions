@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Create Http API</title>
+</head>
+<body>
+    <script>
+        const requrl='https://api.github.com/users/hiteshchoudhary';
+        // console.log(requrl)
+        const raj=new XMLHttpRequest();
+        raj.open('GET',requrl);
+        raj.onreadystatechange=()=>{
+            console.log(raj.readyState)
+            if (raj.readyState===4) {
+                console.log(raj.responseText)
+                const hitis=JSON.parse(raj.responseText);
+                console.log((hitis.followers))
+            }
+        }
+        raj.send()
+    </script>
+</body>
+</html>
